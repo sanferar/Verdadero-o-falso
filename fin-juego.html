@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="b.css">
+  <title>Fin de la partida</title>
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script defer type="module" src="./script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Gloria+Hallelujah&family=Itim&family=Nunito&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+
+</head>
+
+<body class="fin-partida">
+
+  <div class="container container-fin-partida" id="contenedor-fin-partida">
+
+    <h1 class="titulo-fin-partida">Fin de partida</h1>
+
+    <div class="contenedor-resultados">
+
+      <div class="card-header" id="bloque-resultados">
+
+        <div class="contador caja-info-resultado">
+          <div class="icon-dato">
+            <i class="bi bi-bar-chart-fill"></i>
+            <span id="resultado">0</span>
+          </div>
+          <div class="caja-dato-description">Este es el total de puntos conseguidos, restando a los aciertos los fallos.
+          </div>
+        </div>
+
+        <div class="contador-a caja-info-resultado">
+          <div class="icon-dato">
+            <i class="bi bi-hand-thumbs-up"></i>
+            <span id="contadora">0</span>
+          </div>
+          <div class="caja-dato-description">Este es el total de aciertos</div>
+        </div>
+
+        <div class="contador-preguntas caja-info-resultado">
+          <div class="icon-dato">
+            <i class="bi bi-question-lg"></i>
+            <span id="numero-preguntas-live">1</span>
+          </div>
+          <div class="caja-dato-description">Todas las preguntas que te ha dado tiempo a contestar</div>
+        </div>
+
+        <div class="estadistica-aciertos caja-info-resultado estadistica-final">
+          <div class="icon-dato">
+            <i class="bi bi-percent"></i>
+            <span id="estd-aciertos">0</span>
+          </div>
+          <div class="caja-dato-description">
+            El porcentaje de aciertos que has tenido.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-header" id="bloque-fallos">
+        <div class="contador-f caja-info-resultado" id="fallos__respuestas">
+          <div class="icon-dato">
+            <i class="bi bi-hand-thumbs-down"></i>
+            <span id="contadorf">0</span>
+          </div>
+          <div class="caja-dato-description">
+            Este es el total de fallos que has cometido
+          </div>
+          <div id="enunciados-fallados">
+          </div>
+        </div>
+      </div>
+
+      <div class="pantalla-resultados">
+        <button type="button" class="btn btn-primary" id="enlace-btn-restart">Volver a
+          Jugar</button>
+        <button type="button" class="btn btn-success" id="enlace-compartir-w">Compartir por WhatsApp</button>
+
+        <button class="btn text-bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          Historial de preguntas
+        </button>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body" id="historial-total-preguntas">
+            <!-- Aquí va el historial de preguntas -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
