@@ -1,10 +1,10 @@
-#Juego Verdadero o falso
+# Juego Verdadero o falso
 
-##Introducción
+## Introducción
 
 El objetivo de este proyecto era crear un sistema de aprendizaje gamificado que monitorizase el rendimiento y registrase los fallos para aprender de ellos. 
 
-##Funcionamiento
+## Funcionamiento
 
 El objetivo del juego consiste en responder al mayor número de preguntas posibles teniendo en cuenta la gestión del tiempo. El juego comienza con 30" a disposición del usuario, a los que se sumarán o descontarán segúndos en función de las respuestas dadas.
 
